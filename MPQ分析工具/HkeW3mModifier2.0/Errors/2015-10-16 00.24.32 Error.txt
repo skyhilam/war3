@@ -1,0 +1,157 @@
+==============================================================================
+Exe:      E:\Users\會用到\HkeW3mModifier2.0\HkeW3mModifier2.0.exe
+Time:     Oct 16, 2015 12:24:32.636 AM
+User:     user
+Computer: A130
+------------------------------------------------------------------------------
+
+This application has encountered a critical error:
+
+存放體空間不足，無法處理此命令。
+
+Program:	E:\Users\會用到\HkeW3mModifier2.0\HkeW3mModifier2.0.exe
+File:	E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp
+Line:	898
+
+
+
+------------------------------------------------------------------------------
+
+----------------------------------------
+    Stack Trace (Manual)
+----------------------------------------
+
+Address  Frame    Logical addr  Module
+
+15027ECA 0018F4A8 0001:00026ECA E:\USERS\會用到\HKEW3MMODIFIER2.0\Storm.dll
+15019982 0018F500 0001:00018982 E:\USERS\會用到\HKEW3MMODIFIER2.0\Storm.dll
+1501973F 0018F528 0001:0001873F E:\USERS\會用到\HKEW3MMODIFIER2.0\Storm.dll
+1501E4B2 0018F570 0001:0001D4B2 E:\USERS\會用到\HKEW3MMODIFIER2.0\Storm.dll
+1501E250 0018F594 0001:0001D250 E:\USERS\會用到\HKEW3MMODIFIER2.0\Storm.dll
+00468D7A 0018F5C8 0001:00067D7A E:\Users\會用到\HkeW3mModifier2.0\HkeW3mModifier2.0.exe
+
+----------------------------------------
+    Stack Trace (Using DBGHELP.DLL)
+----------------------------------------
+
+
+
+----------------------------------------
+    Loaded Modules
+----------------------------------------
+
+0x00290000 - 0x002A6000  C:\USERS\USER\APPDATA\LOCAL\TEMP\MBX@14A8@601A40.###
+0x00400000 - 0x00500000  E:\Users\會用到\HkeW3mModifier2.0\HkeW3mModifier2.0.
+0x10000000 - 0x10033000  C:\USERS\USER\APPDATA\LOCAL\TEMP\MBX@14A8@601A50.###
+0x15000000 - 0x15068000  C:\USERS\USER\APPDATA\LOCAL\TEMP\MBX@14A8@601A60.###
+0x72760000 - 0x727E0000  C:\Windows\system32\uxtheme.dll
+0x72E70000 - 0x7300E000  C:\Windows\WinSxS\x86_microsoft.windows.common-controls_6595b64144ccf1df_6.0.7601.17514_none_41e6975e2bd6f2b2\comctl32.dll
+0x734D0000 - 0x735BB000  C:\Windows\system32\dbghelp.dll
+0x751F0000 - 0x751F9000  C:\Windows\system32\version.dll
+0x752C0000 - 0x752CC000  C:\Windows\syswow64\CRYPTBASE.dll
+0x752D0000 - 0x75330000  C:\Windows\syswow64\SspiCli.dll
+0x75520000 - 0x755C0000  C:\Windows\syswow64\ADVAPI32.dll
+0x755C0000 - 0x755CA000  C:\Windows\syswow64\LPK.dll
+0x755D0000 - 0x75660000  C:\Windows\syswow64\GDI32.dll
+0x75810000 - 0x758BC000  C:\Windows\syswow64\msvcrt.dll
+0x758C0000 - 0x7650A000  C:\Windows\syswow64\shell32.dll
+0x76510000 - 0x76529000  C:\Windows\SysWOW64\sechost.dll
+0x76620000 - 0x76667000  C:\Windows\syswow64\KERNELBASE.dll
+0x76680000 - 0x7671D000  C:\Windows\syswow64\USP10.dll
+0x76720000 - 0x76810000  C:\Windows\syswow64\RPCRT4.dll
+0x76810000 - 0x76910000  C:\Windows\syswow64\USER32.dll
+0x76CE0000 - 0x76DF0000  C:\Windows\syswow64\kernel32.dll
+0x76E10000 - 0x76E70000  C:\Windows\system32\IMM32.DLL
+0x76E70000 - 0x76FCC000  C:\Windows\syswow64\ole32.dll
+0x76FD0000 - 0x77027000  C:\Windows\syswow64\SHLWAPI.dll
+0x77030000 - 0x770BF000  C:\Windows\syswow64\oleaut32.dll
+0x770C0000 - 0x7718C000  C:\Windows\syswow64\MSCTF.dll
+0x77190000 - 0x7720B000  C:\Windows\syswow64\comdlg32.dll
+0x77BF0000 - 0x77D70000  C:\Windows\SysWOW64\ntdll.dll
+
+
+----------------------------------------
+    Memory Dump
+----------------------------------------
+
+Stack: 1024 bytes starting at (ESP = 0018E3E0)
+
+* = addr  **                                                  *               
+0018E3E0: 14 01 00 00  5C E7 18 00  00 00 00 00  45 3A 5C 55  ....\.......E:\U
+0018E3F0: 73 65 72 73  5C B7 7C A5  CE A8 EC 5C  48 6B 65 57  sers\.|....\HkeW
+0018E400: 33 6D 4D 6F  64 69 66 69  65 72 32 2E  30 5C 48 6B  3mModifier2.0\Hk
+0018E410: 65 57 33 6D  4D 6F 64 69  66 69 65 72  32 2E 30 2E  eW3mModifier2.0.
+0018E420: 65 78 65 00  F8 F3 18 00  80 E6 18 00  14 01 00 00  exe.............
+0018E430: 64 E5 18 00  24 6C 01 15  B8 1B 05 15  50 E4 18 00  d...$l......P...
+0018E440: 04 01 00 00  14 01 00 00  5C E7 18 00  00 00 00 00  ........\.......
+0018E450: 45 3A 5C 55  73 65 72 73  5C B7 7C A5  CE A8 EC 5C  E:\Users\.|....\
+0018E460: 48 6B 65 57  33 6D 4D 6F  64 69 66 69  65 72 32 2E  HkeW3mModifier2.
+0018E470: 30 5C 45 72  72 6F 72 73  5C 32 30 31  35 2D 31 30  0\Errors\2015-10
+0018E480: 2D 31 36 20  30 30 2E 32  34 2E 33 32  20 45 72 72  -16 00.24.32 Err
+0018E490: 6F 72 2E 74  78 74 00 00  14 01 00 00  00 00 00 00  or.txt..........
+0018E4A0: 5C E7 18 00  FC E4 18 00  38 89 4E 00  90 07 54 00  \.......8.N...T.
+0018E4B0: 1B 89 4E 00  14 01 00 00  5C E7 18 00  00 00 00 00  ..N.....\.......
+0018E4C0: 14 01 00 00  83 00 00 00  14 01 00 00  88 73 4F 00  .............sO.
+0018E4D0: 00 00 00 00  50 E5 18 00  44 98 4E 00  B8 00 54 00  ....P...D.N...T.
+0018E4E0: EE 54 4E 00  40 E5 18 00  74 54 4E 00  FF FF FF FF  .TN.@...tTN.....
+0018E4F0: 2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  ----------------
+0018E500: 2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  ----------------
+0018E510: 2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  ----------------
+0018E520: 2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  ----------------
+0018E530: 2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 2D 2D  2D 2D 00 00  --------------..
+0018E540: 7A 7D 06 00  54 E5 18 00  01 00 00 00  5C E5 18 00  z}..T.......\...
+0018E550: E0 E3 18 00  8C 1D 00 15  01 00 6E 00  14 F4 18 00  ..........n.....
+0018E560: 9C 65 01 15  08 00 00 00  03 00 00 00  7C 14 00 00  .e..........|...
+0018E570: DF 2F F3 27  A4 F4 18 00  6C 00 2D 02  45 3A 5C 55  ./.'....l.-.E:\U
+0018E580: 73 65 72 73  5C B7 7C A5  CE A8 EC 5C  48 6B 65 57  sers\.|....\HkeW
+0018E590: 33 6D 4D 6F  64 69 66 69  65 72 32 2E  30 5C 45 72  3mModifier2.0\Er
+0018E5A0: 72 6F 72 73  5C 43 72 61  73 68 53 75  6D 6D 61 72  rors\CrashSummar
+0018E5B0: 69 65 73 2E  62 69 6E 00  41 0D 41 0D  41 0D 41 0D  ies.bin.A.A.A.A.
+0018E5C0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E5D0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E5E0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E5F0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E600: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E610: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E620: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E630: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E640: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E650: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E660: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E670: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 00  A.A.A.A.A.A.A.A.
+0018E680: 54 68 69 73  20 61 70 70  6C 69 63 61  74 69 6F 6E  This application
+0018E690: 20 68 61 73  20 65 6E 63  6F 75 6E 74  65 72 65 64   has encountered
+0018E6A0: 20 61 20 63  72 69 74 69  63 61 6C 20  65 72 72 6F   a critical erro
+0018E6B0: 72 3A 0A 0A  A6 73 A9 F1  C5 E9 AA C5  B6 A1 A4 A3  r:...s..........
+0018E6C0: A8 AC A1 41  B5 4C AA 6B  B3 42 B2 7A  A6 B9 A9 52  ...A.L.k.B.z...R
+0018E6D0: A5 4F A1 43  0D 0A 0A 50  72 6F 67 72  61 6D 3A 09  .O.C...Program:.
+0018E6E0: 45 3A 5C 55  73 65 72 73  5C B7 7C A5  CE A8 EC 5C  E:\Users\.|....\
+0018E6F0: 48 6B 65 57  33 6D 4D 6F  64 69 66 69  65 72 32 2E  HkeW3mModifier2.
+0018E700: 30 5C 48 6B  65 57 33 6D  4D 6F 64 69  66 69 65 72  0\HkeW3mModifier
+0018E710: 32 2E 30 2E  65 78 65 0A  46 69 6C 65  3A 09 45 3A  2.0.exe.File:.E:
+0018E720: 5C 44 72 69  76 65 31 5C  74 65 6D 70  5C 62 75 69  \Drive1\temp\bui
+0018E730: 6C 64 77 61  72 33 78 5C  53 54 4F 52  4D 5C 53 6F  ldwar3x\STORM\So
+0018E740: 75 72 63 65  5C 53 46 69  6C 65 2E 63  70 70 0A 4C  urce\SFile.cpp.L
+0018E750: 69 6E 65 3A  09 38 39 38  0A 0A 0A 0A  00 0D 41 0D  ine:.898......A.
+0018E760: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E770: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E780: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E790: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E7A0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E7B0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E7C0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+0018E7D0: 41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  41 0D 41 0D  A.A.A.A.A.A.A.A.
+
+
+------------------------------------------------------------------------------
+    1  2048 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4370)
+    1 2097152 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4361)
+    1    32 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4176)
+    1   604 .?AUARCHIVEREC@SFile@Storm@@(-2)
+    1  4096 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4665)
+    1   344 .?AUFILEREC@@(-2)
+    1  5120 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(832)
+    1    12 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4654)
+    0     0 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(898)
+    1 2640000 E:\Drive1\temp\buildwar3x\STORM\Source\SFile.cpp(4401)
+------------------------------------------------------------------------------

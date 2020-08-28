@@ -1,0 +1,168 @@
+﻿[TriggerEventStrings]
+DYCAnyUnitChargedRegistTrigger="任意單位被衝鋒" 
+DYCAnyUnitChargedRegistTrigger="任意單位 被衝鋒" 
+DYCAnyUnitChargedRegistTriggerHint="配合衝鋒系統使用。不能獲取觸發單位！請使用衝鋒者和被衝鋒單位。"
+
+DYCAnyUnitChargeOverRegistTrigger="任意單位完成衝鋒" 
+DYCAnyUnitChargeOverRegistTrigger="任意單位 完成衝鋒" 
+DYCAnyUnitChargeOverRegistTriggerHint="配合衝鋒系統使用。不能獲取觸發單位！請使用衝鋒者和被衝鋒單位。"
+
+DYCAnyUnitChargeStopRegistTrigger="任意單位停止衝鋒" 
+DYCAnyUnitChargeStopRegistTrigger="任意單位 停止衝鋒" 
+DYCAnyUnitChargeStopRegistTriggerHint="配合衝鋒系統使用。不能獲取觸發單位！請使用衝鋒者和被衝鋒單位。"
+
+DYCAnyUnitDDOverRegistTrigger="任意單位傷害顯示完畢" 
+DYCAnyUnitDDOverRegistTrigger="任意單位 傷害顯示完畢" 
+DYCAnyUnitDDOverRegistTriggerHint="配合傷害顯示使用。不能獲取觸發單位！請使用傷害顯示單位和顯示的傷害的來源。"
+
+[TriggerActionStrings]
+// ability&system
+DYCleap=跳躍系統[DYC]
+DYCleap="命令",~單位,"跳躍，跳躍高度：",~,"，跳躍距離：",~,"，跳躍時間：",~,"，跳躍角度：",~,"，防卡位：",~,"，殺死樹木：",~,"。"
+DYCleapHint="單位移速必須大於0，默認高度必須大於最小高度。防卡位：防止落在懸崖上；殺死樹木：落地後殺死周圍樹木。"
+
+DYCpushback=擊退系統[DYC]
+DYCpushback="對",~單位,"朝",~,"發動擊退，擊退距離：",~,"，擊退時間：",~,"，是否開啟特效：",~,"。"
+DYCpushbackHint="相當於勻減速衝鋒。單位移速比較大於0，默認帶有防卡位、清除樹木功能。"
+
+DYCcharge=衝鋒系統-基礎[DYC]
+DYCcharge="命令",~,"發動衝鋒，衝鋒高度為",~,"，衝鋒距離為",~,"，衝鋒時間為",~,"秒，角度為",~,"。對其為中心",~,"為半徑範圍內的單位造成影響，是否影響蝗蟲單位：",~,"。防卡位：",~,"，殺死樹木：",~,"，鎖定單位角度：",~,"。命名該衝鋒：",~,"。"
+DYCchargeHint="死亡自動終止。配合'被衝鋒'、'完成衝鋒'、'停止衝鋒'事件使用。命名衝鋒使得可以在事件中區分不同衝鋒。只能影響遊戲開始後進入地圖的蝗蟲單位。"
+
+DYCchargetarget=衝鋒系統-鎖定目標[DYC]
+DYCchargetarget="命令",~,"對",~目標,"發動衝鋒，衝鋒高度為",~,"，衝鋒速度為",~,"，與目標距離小於",~,"時完成衝鋒。對以衝鋒者為中心",~,"為半徑範圍內的單位造成影響，是否影響蝗蟲單位：",~,"。衝鋒時播放衝鋒者第",~,"號動作，動畫播放速度倍數為",~,"。命名該衝鋒：",~,"。"
+DYCchargetargetHint="衝鋒者或被衝鋒單位死亡自動終止。蝗蟲單位不會播放動畫。配合'被衝鋒'、'完成衝鋒'、'停止衝鋒'事件使用。"
+
+DYCcharge3dsin=衝鋒系統-3D波動[DYC]
+DYCcharge3dsin="命令",~,"按照Sin函數曲線衝鋒，軸向衝鋒距離：",~,"，衝鋒時間：",~,"秒，X、Y、Z三軸旋轉角：(",~,",",~,",",~,")，使用的Sin曲線週期數：",~,"個週期，Sin振幅：",~,"，Sin曲線初相位：",~,"個週期。對以衝鋒者為中心",~,"為半徑的範圍內的單位造成影響，是否採用球體選擇範圍：",~,"，是否影響蝗蟲單位：",~,"，是否鎖定面向角：",~,"，命名該衝鋒：",~,"。"
+DYCcharge3dsinHint="x軸逆時針為正、y軸順時針為正、z軸逆時針為正。球體範圍false則使用傳統的圓柱體選取範圍(即不考慮高度)。"
+
+DYCcharge3dsintarget=衝鋒系統-3D波動鎖定目標[DYC]
+DYCcharge3dsintarget="命令",~,"對",~目標,"發動波動衝鋒，軸向衝鋒速度：",~,"，X軸旋轉角：",~,"，使用Sin曲線週期數：",~,"個週期，Sin振幅：",~,"，Sin曲線初相位：",~,"個週期，與目標距離小於",~,"時完成衝鋒。對以衝鋒者為中心",~,"為半徑範圍內的單位造成影響，是否採用球體選擇範圍：",~,"，是否影響蝗蟲單位：",~,"，是否鎖定面向角：",~,"，是否採用振幅衰減：",~,"，命名該衝鋒：",~,"。"
+DYCcharge3dsintargetHint="振幅衰減是指快結束時，振幅會逐漸變為0，如果感到軌跡不自然可以開啟這項。"
+
+DYCcharge3dhelix=衝鋒系統-3D螺旋[DYC]
+DYCcharge3dhelix="命令",~,"按照Sin螺旋曲線衝鋒，軸向衝鋒距離：",~,"，衝鋒時間：",~,"秒，X、Y、Z三軸旋轉角：(",~,",",~,",",~,")，使用的Sin曲線週期數：",~,"個週期，Sin振幅：",~,"，Sin曲線初相位：",~,"個週期。對以衝鋒者為中心",~,"為半徑的範圍內的單位造成影響，是否採用球體選擇範圍：",~,"，是否影響蝗蟲單位：",~,"，是否鎖定面向角：",~,"，命名該衝鋒：",~,"。"
+DYCcharge3dhelixHint="x軸逆時針為正、y軸順時針為正、z軸逆時針為正。球體範圍false則使用傳統的圓柱體選取範圍(即不考慮高度)。"
+
+DYCcharge3dhelixtarget=衝鋒系統-3D螺旋鎖定目標[DYC]
+DYCcharge3dhelixtarget="命令",~,"對",~目標,"發動螺旋衝鋒，軸向衝鋒速度：",~,"，X軸旋轉角：",~,"，使用Sin曲線週期數：",~,"個週期，Sin振幅：",~,"，Sin曲線初相位：",~,"個週期，與目標距離小於",~,"時完成衝鋒。對以衝鋒者為中心",~,"為半徑範圍內的單位造成影響，是否採用球體選擇範圍：",~,"，是否影響蝗蟲單位：",~,"，是否鎖定面向角：",~,"，是否採用振幅衰減：",~,"，命名該衝鋒：",~,"。"
+DYCcharge3dhelixtargetHint="振幅衰減是指快結束時，振幅會逐漸變為0，建議開啟。"
+
+DYCchargeend=衝鋒系統-終止[DYC]
+DYCchargeend="命令",~,"終止名為",~,"的衝鋒"
+DYCchargeendHint="提前結束某個衝鋒。"
+
+DYCImpaleLinear=模擬穿刺系統(直線)[DYC]
+DYCImpaleLinear="命令",~,"發動傷害為",~,"的直線穿刺，穿刺距離為",~,"，碰撞半徑為",~,"。穿刺起點坐標為(",~x,",",~y,")，穿刺蔓延速度為",~,"，角度為",~,"。為",~,"創建帶有",~,"級",~技能,"的",~馬甲,"對被穿刺的單位發動",~,"。"
+DYCImpaleLinearHint="直線穿刺系統，擊飛高度固定450，擊飛時間為0.6，擊飛過程單位被暫停。"
+
+DYCImpaleSector=模擬穿刺系統(扇形)[DYC]
+DYCImpaleSector="命令",~,"發動傷害為",~,"的扇形穿刺，穿刺距離為",~,"，碰撞半徑為",~,"。穿刺起點坐標為(",~x,",",~y,")，穿刺蔓延速度為",~,"，角度為",~,"，扇形度數為",~,"。為",~,"創建帶有",~,"級",~技能,"的",~馬甲,"對被穿刺的單位發動",~,"。"
+DYCImpaleSectorHint="扇形穿刺系統，擊飛高度固定450，擊飛時間為0.6，擊飛過程單位被暫停。扇形度數設為360則相當於圓形穿刺。"
+
+DYCdmgdodge=傷害抵擋[DYC]
+DYCdmgdodge="為 觸發單位 抵擋 ",~,"*單位所受傷害 點傷害。"
+DYCdmgdodgeHint="在受傷害事件中使用。原理：根據不同的血量情況分別採取預回血、0秒回血、0秒無敵的方式。"
+
+DYCdmgdisplay=傷害顯示[DYC]
+DYCdmgdisplay="用漂浮文字顯示傷害在坐標(",~,",",~,")，高度為",~,"，字體大小為",~,"，文字持續",~,"秒，文字移動速度為",~,"，角度為",~,"度。文字前綴",~,"，文字後綴",~,"。是否對觸發單位所有者顯示：",~,"，是否對傷害來源所有者顯示：",~,"，是否對所有玩家顯示：",~,"(勾選此項可忽略前兩項)。"
+DYCdmgdisplayHint="在受傷害事件中使用，可以配合傷害抵擋系統。顯示值為0.011秒內的傷害總和減去被抵擋掉的傷害。"
+
+DYCUPause=暫停系統[DYC]
+DYCUPause="暫停",~," ",~,"秒，暫停方式：",~,"。"
+DYCUPauseHint="暫停單位或動畫。計時器不會相互衝突。同時暫停單位和動畫時會暫停跳躍、擊退等動作。"
+
+DYCspawnsystemstart=刷兵系統-開啟[DYC]
+DYCspawnsystemstart="為",~,"創建刷兵計時器並開始刷兵，起點坐標（",~,"，",~,"），攻擊移動到坐標（",~,"，",~,"），兵種類型1：",~,"，兵種1的數量：",~,"，兵種類型2：",~,"，兵種2的數量：",~,"，兵種類型3：",~,"，兵種3的數量：",~,"，兵種類型4：",~,"，兵種4的數量：",~,"，單位初始面向角：",~,"，刷兵間隔：",~,"，單個間隔：",~,"，是否隨機兵種順序：",~,"。為每個刷出的單位在",~,"秒後刪除新建特效",~,"，綁定在單位的",~,"附著點處。"
+DYCspawnsystemstartHint="可以用“最後創建刷兵計時器”獲取計時器。單個間隔表示每兩個刷出的單位間的間隔。"
+
+DYCspawnsystemend=刷兵系統-停止[DYC]
+DYCspawnsystemend="停止",~,"的刷兵，並刪除計時器。"
+DYCspawnsystemendHint="停止刷兵並刪除刷兵計時器。"
+
+DYCultrams=突破極限移動速度-開啟[DYC]
+DYCultrams="為",~,"開啟突破極限速度功能，並設置其移動速度為",~,"。"
+DYCultramsHint="還是建議不要超過1000吧。。。設為0有禁錮的效果。"
+
+DYCultramsoff=突破極限移動速度-關閉[DYC]
+DYCultramsoff="停止",~,"的突破極速功能。"
+DYCultramsoffHint="停止某單位的突破急速功能以節省資源。有0.02秒延遲。"
+
+DYCghosting=幻影拖尾特效-開啟[DYC]
+DYCghosting="為",~,"開啟幻影拖尾特效，幻影產生間隔為",~,"，存在時間為",~,"。幻影的單位類型為",~,"，幻影所有者為",~,"。幻影的坐標xy修正值為(",~,",",~,")。"
+DYCghostingHint="幻影單位類型建議使用無陰影的馬甲。如果發現幻影位置不準確請使用坐標修正。"
+
+DYCghostingoff=幻影拖尾特效-關閉[DYC]
+DYCghostingoff="關閉",~,"的幻影拖尾特效。"
+DYCghostingoffHint="關閉特效以節省資源。有0.02秒延遲。"
+
+DYCbarsim=狀態條模擬系統-開啟/更新[DYC]
+DYCbarsim="為",~,"開啟狀態條模擬功能或更新數據。設定格子總數為",~,"，當前值為",~,"，最大值為",~,"。設定漂浮文字高度為",~,"，字體大小為",~,"，使用的格子字符為",~,"，滿狀態顏色為",~,"，空狀態顏色為",~,"。是否僅對自己顯示",~,"。xy坐標修正值(",~,",",~,")。"
+DYCbarsimHint="可以用來模擬單位的某項自定義值顯示。對已開啟的單位使用會更新數據。如果發現位置不準，請使用坐標修正。"
+
+DYCbarsimoff=狀態條模擬系統-關閉[DYC]
+DYCbarsimoff="關閉",~,"的狀態條模擬功能。"
+DYCbarsimoffHint="刪除漂浮文字以節省資源。有0.02秒延遲。"
+
+// unit
+DYCaddabilityp="添加技能並設永久 [DYC]"
+DYCaddabilityp="為",~,"添加",~,"級的",~技能,"並設置永久性為",~,"，是否對所屬玩家禁用：",~,"。"
+DYCaddabilitypHint="添加技能並設置永久性。"
+
+// lightning
+DYCaddlightning=計時器刪除新建閃電(可綁單位) [DYC]
+DYCaddlightning="創建閃電",~閃電類型,"從坐標(",~,",",~,",",~,")到坐標(",~,",",~,",",~,"),顏色:紅:",~,",綠:",~,",藍:",~,",不透明度:",~,",綁定單位:起點:",~,",終點:",~,",持續時間:",~,"秒,並在",~,"秒內淡化並刪除,是否任意單位死亡提前淡化:",~,",起點坐標xyz修正值:(",~,",",~,",",~,"),終點坐標xyz修正值:(",~,",",~,",",~,")."
+DYCaddlightningHint="若綁定了單位,則無視所填坐標,且會自動跟隨單位移動。會被最後創建閃電獲取，請勿用普通觸發提前刪除。綁地面單位一般需要60的z軸修正"
+
+[TriggerCallStrings]
+// return real
+DYCDisBtwCoords="兩坐標間距離[DYC]"
+DYCDisBtwCoords="坐標(",~,",",~,")與坐標(",~,",",~,")之間的距離."
+DYCDisBtwCoordsHint="免去創建點或者大量嵌套算術運算"
+
+DYCDisSqrBtwCoords="兩坐標間距離的平方[DYC]"
+DYCDisSqrBtwCoords="坐標(",~,",",~,")與坐標(",~,",",~,")間距離的平方."
+DYCDisSqrBtwCoordsHint="用於比較距離,省略開平方步驟,略微節省效率"
+
+DYCDisBtwCoordNLine="坐標到直線的距離[DYC]"
+DYCDisBtwCoordNLine="坐標(",~,",",~,")到坐標(",~,",",~,")與坐標(",~,",",~,")所在直線的距離."
+DYCDisBtwCoordNLineHint="獲取坐標到另外兩坐標所在直線的距離"
+
+GetDYCDDValue="被顯示的傷害[DYC]"
+GetDYCDDValue="被顯示的傷害"
+GetDYCDDValueHint="響應'傷害顯示完畢'事件,指代傷害顯示系統統計出的傷害."
+
+DYCAngleBtwCoords="兩坐標間方向[DYC]"
+DYCAngleBtwCoords="從坐標(",~,",",~,")到坐標(",~,",",~," )的角度"
+DYCAngleBtwCoordsHint="取值-180 - 180."
+
+// return string
+GetDYCChargeName="衝鋒名稱[DYC]"
+GetDYCChargeName="本次衝鋒名稱"
+GetDYCChargeNameHint="響應'被衝鋒'、'完成衝鋒'或'停止衝鋒'事件"
+
+// return unit
+GetDYCChargingUnit=衝鋒者[DYC]
+GetDYCChargingUnit="衝鋒者"
+GetDYCChargingUnitHint="響應'被衝鋒'、'完成衝鋒'或'停止衝鋒'事件"
+
+GetDYCChargedUnit=被衝鋒單位[DYC]
+GetDYCChargedUnit="被衝鋒單位"
+GetDYCChargedUnitHint="響應'被衝鋒'、'完成衝鋒'或'停止衝鋒'事件。無目標衝鋒完成和停止時無法捕捉被衝鋒單位"
+
+GetDYCDDUnit=傷害顯示單位[DYC]
+GetDYCDDUnit="傷害顯示單位"
+GetDYCDDUnitHint="響應'傷害顯示完畢'事件。"
+
+GetDYCDDSUnit=顯示的傷害的來源[DYC]
+GetDYCDDSUnit="顯示的傷害的來源"
+GetDYCDDSUnitHint="響應'傷害顯示完畢'事件。"
+
+// return timer
+DYCspawnsystemstart=新建刷兵計時器並刷兵[DYC]
+DYCspawnsystemstart="為",~,"創建刷兵計時器並開始刷兵，起點坐標（",~,"，",~,"），攻擊移動到坐標（",~,"，",~,"），兵種類型1：",~,"，兵種1的數量：",~,"，兵種類型2：",~,"，兵種2的數量：",~,"，兵種類型3：",~,"，兵種3的數量：",~,"，兵種類型4：",~,"，兵種4的數量：",~,"，單位初始面向角：",~,"，刷兵間隔：",~,"，單個間隔：",~,"，是否隨機兵種順序：",~,"。為每個刷出的單位在",~,"秒後刪除新建特效",~,"，綁定在單位的",~,"附著點處。"
+DYCspawnsystemstartHint="可以用“最後創建刷兵計時器”獲取計時器。單個間隔表示每兩個刷出的單位間的間隔。"
+
+
+[remove:TriggerActionStrings]

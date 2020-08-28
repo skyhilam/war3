@@ -1,0 +1,579 @@
+﻿// Aerial Shackles
+[Amls]
+Name=空中鎖鐐
+Tip=空中鎖鐐(|cffffcc00E|r)
+Ubertip="以魔力禁錮一個目標敵空中單位，使其不能移動或攻擊，並每秒受到<Amls,DataA1>傷害力。|n持續<Amls,Dur1>秒。"
+Hotkey=E
+YDWEtip="造成法術攻擊，魔法傷害"
+
+// Aerial Shackles Target
+[Bmlt]
+Bufftip=空中鎖鐐
+Buffubertip="該單位已受空中鎖鐐禁錮，無法移動或攻擊，並且不斷受到傷害。"
+
+// area of effect detection (scry)
+[AHta]
+Name=顯示
+Tip=顯示(|cffffcc00R|r)
+Ubertip="在地圖上顯示一塊區域。|n探測到隱形的單位。|n持續<AHta,Dur1>秒。"
+Hotkey=R
+
+// Feedback
+[Afbk]
+Name=魔法回應
+EditorSuffix= (魔法破壞者)
+Tip=魔法回應
+Ubertip="魔法破壞者每次攻擊消耗目標<Afbk,DataA1>點魔法值。魔法燃燒後將會對攻擊對象造成傷害。"
+YDWEtip="武器類型為普通或立即時,反饋的消魔效果是4級純法球，被更高級的法球效果覆蓋。武器類型為投射時，反饋是4級空法球+非獨立特效，被更高級的法球效果或攻擊特效覆蓋。其他武器類型反饋失效。"
+
+// Feedback
+[Afbt]
+Name=魔法回應
+EditorSuffix= (神秘之塔)
+Tip=魔法回應
+Ubertip="塔的每次攻擊消耗目標<Afbt,DataA1>點魔法值，同時還對於目標造成相同數值的傷害。|n|n這種塔的攻擊對於召喚出來的單位還能造成<Afbt,DataE1>點的附加傷害。"
+YDWEtip="武器類型為普通或立即時,反饋的消魔效果是4級純法球，被更高級的法球效果覆蓋。武器類型為投射時，反饋是4級空法球+非獨立特效，被更高級的法球效果或攻擊特效覆蓋。其他武器類型反饋失效。"
+
+
+// Control Magic
+[Acmg]
+Name=控制魔法
+Tip=控制魔法(|cffffcc00C|r)
+Ubertip="控制一個敵軍的召喚單位。消耗的魔法值基為召喚單位生命值的<Acmg,DataB1,%>%。"
+Hotkey=C
+YDWEtip="只能控制召喚單位，包括單位類別為召喚的單位"
+
+[Bcmg]
+Bufftip=控制魔法
+Buffubertip="這個單位可以被控制。它現在遵從一個新主人了。"
+
+// Siphon Mana
+[AHdr]
+Name=魔法吸吮
+Tip=魔法吸吮(|cffffcc00N|r) - [|cffffcc00等級 1|r],魔法吸吮(|cffffcc00N|r) - [|cffffcc00等級 2|r],魔法吸吮(|cffffcc00N|r) - [|cffffcc00等級 3|r]
+Ubertip="讓魔法能量在血魔法師和目標單位之間轉移。能每秒吸取敵人<AHdr,DataB1>點魔法值。或者是每秒向己方單位轉移<AHdr,DataE1>點魔法值。|n|n吸吮魔法能讓血魔法師的魔法值超過它自己的最大值。但是如果你不是盡快使用超量的魔法值的話，那麼這些魔法值會很快消失。|n持續<AHdr,Dur1>秒。","讓魔法能量在血魔法師和目標單位之間轉移。能每秒吸取敵人<AHdr,DataB2>點魔法值。或者是每秒向己方單位轉移<AHdr,DataE2>點魔法值。|n|n吸吮魔法能讓血魔法師的魔法值超過它自己的最大值。但是如果你不是盡快使用超量的魔法值的話，那麼這些魔法值會很快地消失。|n持續<AHdr,Dur2>秒。","讓魔法能量在血魔法師和目標單位之間轉移。能每秒吸取敵人<AHdr,DataB3>點魔法值。或者是每秒向己方單位轉移<AHdr,DataE3>點魔法值。|n|n吸吮魔法能讓血魔法師的魔法值超過它自己的最大值。但是如果你不是盡快使用超量的魔法值的話，那麼這些魔法值會很快地消失。|n持續<AHdr,Dur3>秒。"
+Hotkey=N
+Researchtip="學習魔法吸吮(|cffffcc00N|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="讓魔法能量在血魔法師和目標單位之間轉移。能每秒吸取敵人一定點數的魔法值。或者是每秒向己方單位轉移一定點數的魔法值。|n|n吸吮魔法能讓血魔法師的魔法值超過它自己的最大值。但是如果你不是盡快使用超量的魔法值的話，那麼這些魔法值會很快地消失。|n持續<AHdr,Dur1>秒。|n|n|cffffcc00等級 1|r - 每秒吸取點<AHdr,DataB1>魔法值。|n|cffffcc00等級 2|r - 每秒吸取<AHdr,DataB2>點魔法值。 |n|cffffcc00等級 3|r - 每秒吸取<AHdr,DataB3>點魔法值。" 
+Researchhotkey=N
+YDWEtip="吸取生命部分造成法術攻擊，魔法傷害。能否向友軍轉移魔法和生命取決於遊戲平衡性常數"
+
+[Bdbb]
+Name=吸取生命值和魔法值（附加）
+Bufftip=吸取生命值和魔法值
+Buffubertip="這個單位具有額外的生命值和魔法值。但是這個額外的值會消失得很快。"
+
+[Bdbl]
+Name=吸取生命（附加）
+Bufftip=吸取生命
+Buffubertip="這個單位具有額外的生命值。但是這個額外的值會消失得很快。"
+
+[Bdbm]
+Name=吸取魔法（附加）
+Bufftip=吸取魔法
+Buffubertip="這個單位具有額外的魔法值。但是這個額外的值會消失得很快。"
+
+// Flak Cannons
+[Aflk]
+Name=高射炮火
+Tip=高射炮火
+Ubertip="強大的加農炮對空將會造成區域性傷害。"
+YDWEtip="造成的攻擊類型和傷害類型與原始攻擊相同。4級類攻擊特效，和先獲得或低級的攻擊特效共存，被後獲得或高級的攻擊特效覆蓋。和類攻擊特效完美疊加。只對武器類型為普通或立即的單位有效。"
+
+// Frag Shards
+[Afsh]
+Name=碎片攻擊
+Tip=碎片攻擊
+Ubertip="迫擊炮小隊使用碎片攻擊的迫擊炮，將會增加其對無護甲和中型護甲單位的傷害。"
+YDWEtip="碎片攻擊僅對中甲和無甲單位有效.4級空法球+獨立攻擊特效，覆蓋低級的法球效果和攻擊特效，被後獲得或者更高級的攻擊特效覆蓋。只對武器類型為炮火(非炮火(穿透))的單位有效"
+
+
+// Barrage
+[Aroc]
+Name=彈幕攻擊
+Tip=彈幕攻擊
+Ubertip="對周圍的敵方空中單位進行強有力的彈幕攻擊。每次發射能造成<hrtt,mindmg2> - <hrtt,maxdmg2>點的傷害。"
+YDWEtip="4級空法球+獨立類攻擊特效，覆蓋低級的法球效果，和低級或先獲得的同級攻擊特效共存，被高級或後獲得的同級攻擊特效覆蓋。和類攻擊特效完美疊加。對武器類型為箭矢(非濺射，穿透，彈射)的單位有效"
+
+
+// Tank upgrade
+[Srtt]
+Requires=Rhrt
+
+// Magic Defense
+[Amdf]
+Name=魔法防禦
+Tip=魔法防禦(|cffffcc00D|r)
+Untip=停止使用魔法防禦(|cffffcc00D|r)
+Ubertip="激活該技能來獲得魔法免疫，但是會減慢<Adef,DataC1,%>%的移動速度。"
+Unubertip="取消激活該技能能恢復到正常的移動速度，但是同時也對魔法不再免疫。"
+Hotkey=D
+Unhotkey=D
+YDWEtip="傷害增加是1級類法球效果，被後獲得的1級法球效果覆蓋，和類法球效果完美疊加。"
+
+// Sphere
+[Asph]
+Name=球體
+YDWEtip="該技能能夠給單位綁定模型，該模型會在單位攻擊或施法時播放死亡動畫，魔法施放冷卻時間過後才會重新創建，並播放該模型的誕生動畫。單位死亡則特效消失。另外，該技能能在單位施放技能至發動技能期間，向目標釋放投射物，投射物到達時間等同於單位的施法前搖。"
+
+// Spell Steal
+[Asps]
+Name=魔法盜取
+Tip=魔法盜取(|cffffcc00T|r)
+Ubertip="從敵人身上盜取正面效果的魔法並將其運用到附近的友軍單位身上。或者是將友軍單位身上的一個負面效果魔法應用到敵方單位身上。"
+Untip="|cffc3dbff點擊右鍵以激活自動施放功能。|r"
+Unubertip="|cffc3dbff點擊右鍵以取消自動施放功能。|r"
+Hotkey=T
+Unhotkey=T
+YDWEtip="盜取的優先級由技能的魔法盜取優先級項決定。"
+
+// Cloud
+[Aclf]
+Name=烏雲技能
+Tip=烏雲技能(|cffffcc00C|r)
+Ubertip="施放在具有遠程攻擊能力的敵方建築物上使其喪失攻擊力。|n持續<Aclf,Dur1>秒。"
+Hotkey=C
+YDWEtip="該技能有bug，目標允許僅按照玩家1的敵友來判定。"
+
+[Bclf]
+Bufftip=烏雲技能
+Buffubertip="該建築物中了烏雲技能，所以喪失了遠程攻擊的能力。"
+
+// Flame Strike
+[AHfs]
+Name=烈焰風暴
+Tip=烈焰風暴(|cffffcc00F|r) - [|cffffcc00等級 1|r],烈焰風暴(|cffffcc00F|r) - [|cffffcc00等級 2|r],烈焰風暴(|cffffcc00F|r) - [|cffffcc00等級 3|r]
+Ubertip="召喚出一道巨大的火焰，持續時間為3秒，每秒對敵方的地面單位造成45點的傷害。在火焰慢慢熄滅的過程中，敵方單位將持續受到極度輕微的傷害。","召喚出一道巨大的火焰，持續時間為3秒，每秒對敵方的地面單位造成80點的傷害。在火焰慢慢熄滅的過程中，敵方單位將持續受到輕微的傷害。","召喚出一道巨大的火焰，持續時間為3秒，每秒對敵方的地面單位造成110點的傷害。在火焰慢慢熄滅的過程中，敵方單位將持續受到中等程度的傷害。"
+Hotkey=F
+Researchtip="學習烈焰風暴(|cffffcc00F|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="召喚出一道巨大的火焰，對目標區域內的敵方步兵造成長時間的傷害。|n|n|cffffcc00等級 1|r -持續3秒，每秒45點的傷害，在接下來的6秒時間內持續造成極度輕微的傷害。|n|cffffcc00等級 2|r -持續3秒，每秒80點的傷害，在接下來的6秒時間內持續造成輕微的傷害。|n|cffffcc00等級 3|r -持續3秒，每秒110點的傷害，在接下來的6秒時間內持續造成中等程度的傷害。"
+Researchhotkey=F
+YDWEtip="造成法術攻擊，火焰傷害(魔法傷害)。該技能的魔法施放時間比較特殊，在施法時間中打斷技能也會消耗魔法和進入冷卻。"
+
+[BHfs]
+Bufftip=烈焰風暴
+Buffubertip="該單位處於烈焰風暴的攻擊之中，因此會在一定時間內持續受到傷害。"
+
+// Banish
+[AHbn]
+Name=驅散
+Tip=驅散(|cffffcc00B|r) - [|cffffcc00等級 1|r],驅散(|cffffcc00B|r) - [|cffffcc00等級 2|r],驅散(|cffffcc00B|r) - [|cffffcc00等級 3|r]
+Ubertip="使一個非機械單位的重量變輕，並通過 <AHbn,DataA1,%>% 降低其移動速度持續 <AHbn,Dur1> 秒。變輕的單位不能攻擊，但是他們能夠施放魔法，幾個魔法可以形成更強大的攻擊。","使一個非機械單位的重量變輕，並通過 <AHbn,DataA2,%>% 降低其移動速度持續 <AHbn,Dur2> 秒。 變輕的單位不能攻擊，但是他們能夠施放魔法，幾個魔法可以形成更強大的攻擊。","使一個非機械單位的重量變輕，並通過 <AHbn,DataA3,%>% 降低其移動速度持續 <AHbn,Dur3> 秒。 變輕的單位不能攻擊，但是他們能夠施放魔法，幾個魔法可以形成更強大的攻擊。"
+Hotkey=B
+Researchtip="學習驅散(|cffffcc00B|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="使一個非機械單位的重量變輕，並通過 <AHbn,DataA1,%>% 在較短時期降低其移動速度。 變輕的單位不能攻擊，但是他們能夠施放魔法，幾個魔法可以形成更強大的攻擊。 |n|n|cffffcc00等級 1|r - <AHbn,Cost1> 魔法, 持續 <AHbn,Dur1> 秒。 |n|cffffcc00等級 2|r - <AHbn,Cost2> 魔法, 持續 <AHbn,Dur2> 秒。 |n|cffffcc00等級 3|r - <AHbn,Cost3> 魔法, 持續 <AHbn,Dur3> 秒。"
+Researchhotkey=B
+YDWEtip="虛無單位會受到魔法攻擊，任意傷害的傷害，以及法術攻擊，魔法類或通用類傷害的傷害。"
+
+[BHbn]
+Bufftip=驅散
+Buffubertip="該單位被驅散了並處於虛無狀態之中。被化為虛無的單位不能攻擊，但是能施放魔法。敵人的魔法也會對其造成額外的傷害。"
+
+// Summon Phoenix
+[AHpx]
+Name=火鳳凰
+Tip=火鳳凰(|cffffcc00X|r)
+Ubertip="召喚一隻強大的火鳳凰。火鳳凰全身燃燒劇烈的火焰，燒傷附近的空中敵人。具有魔法免疫、抗性皮膚。當火鳳凰死後，會變成一隻蛋，可以再次孵化成火鳳凰。|n|n|cffffcc00能攻擊地面和空中單位。|r"
+Hotkey=X
+Researchtip=學習火鳳凰(|cffffcc00X|r)
+Researchubertip="召喚一隻強大的火鳳凰。火鳳凰全身燃燒劇烈的火焰，燒傷附近的空中敵人。具有魔法免疫、抗性皮膚。當火鳳凰死後，會變成一隻蛋，可以再次孵化成火鳳凰。|n|n|cffffcc00能攻擊地面和空中單位。|r"
+Researchhotkey=X
+
+// Phoenix (morph)
+[Aphx]
+Name=火鳳凰變形(和鳳凰蛋有關的)
+
+// Phoenix (progress bar)
+[Bphx]
+Bufftip=火鳳凰
+Buffubertip="火鳳凰的力量顯現了。"
+
+// Phoenix Fire
+[Apxf]
+Name=鳳凰火焰
+Tip=鳳凰火焰
+Ubertip="火焰流淌，灼燒附近的敵單位。"
+YDWEtip="這個技能也可以給單位多重射擊能力，不過傷害不基於單位的攻擊力。它由自己的冷卻時間、投射圖像、傷害和持續傷害，而且會對範圍內的敵人自動施放。其持續時間數據域決定了它持續傷害的持續時間和攻擊同一個目標的間隔。如果有需要，你可以用物品來添加多個相同的鳳凰之火技能，它們能同時生效。法術攻擊，火焰傷害(魔法傷害)"
+
+// Phoenix Fire
+[Bpxf]
+Bufftip=鳳凰火焰
+Buffubertip="該單位正受到鳳凰火焰的灼傷，不斷受到傷害。"
+
+// Flying Machine Bombs
+[Agyb]
+Name=飛行機器炸彈
+Tip=飛行機器炸彈
+Ubertip="使得飛行機器能攻擊地面單位。"
+YDWEtip="這是一個無效果的被動技能，僅僅具有一個圖標，可用來做一些觸發製作的被動技能的圖標"
+
+// Storm hammers
+[Asth]
+Name=風暴戰錘
+Tip=風暴戰錘
+Ubertip="讓獅鷲騎士的戰錘能進行彈射，從而對多個敵人造成傷害。"
+YDWEtip="這是一個無效果的被動技能，僅僅具有一個圖標，可用來做一些觸發製作的被動技能的圖標"
+
+
+// Flying Machine Vision
+[Agyv]
+Name=真實視域
+Tip=真實視域
+Ubertip="顯示周圍的隱形單位。"
+EditorSuffix= (飛行機器)
+YDWEtip="真實視域可以超出視野，但是添加負視野的技能不會使視野小於真實視域"
+
+// Defend
+[Adef]
+Name=防禦
+Tip=防禦(|cffffcc00D|r)
+Ubertip="激活以擁有<Adef,DataF1>%的概率反彈穿刺攻擊。對於沒有被反彈的攻擊，也只會受到<Adef,DataA1,%>%的傷害。如果防禦狀態被激活，移動速度會變成<Adef,DataC1,%>%的常規速度。"
+Untip=停止防禦(|cffffcc00D|r)
+Unubertip="取消防禦模式，回到以往的移動速度。"
+Hotkey=D
+Unhotkey=D
+YDWEtip="傷害增加是1級類法球效果，被後獲得的1級法球效果覆蓋，和類法球效果完美疊加。"
+
+// Flare
+[Afla]
+Name=照明彈
+Tip=照明彈(|cffffcc00F|r)
+Ubertip="在目標區域內投射一顆矮人族的照明彈，從而在<Afla,Dur1>秒的時間內驅散那裡的戰爭迷霧。|n也能探測到隱形單位。"
+Hotkey=F
+
+// Magic Sentry (passive)
+[Adts]
+Name=魔法崗哨
+Tip=魔法崗哨
+Ubertip="顯示周圍的隱形單位。"
+EditorSuffix= (人族的防禦塔)
+YDWEtip="真實視域可以超出視野，但是添加負視野的技能不會使視野小於真實視域"
+
+// Inner Fire
+[Ainf]
+Name=心靈之火
+Tip=心靈之火(|cffffcc00F|r)
+Ubertip="增加目標友軍單位<Ainf,DataA1,%>%的攻擊力和<Ainf,DataB1>的防禦力。|n持續<Ainf,Dur1>秒。"
+Untip="|cffc3dbff點擊右鍵以激活自動施放功能。|r"
+Unubertip="|cffc3dbff點擊右鍵以取消自動施放功能。|r"
+Hotkey=F
+Unhotkey=F
+
+[Binf]
+Bufftip=心靈之火
+Buffubertip="該單位擁有心靈之火，所以其防禦和攻擊力都得到了加強。"
+
+// Dispel Magic
+[Adis]
+Name=驅逐魔法
+Tip=驅逐魔法(|cffffcc00D|r)
+UberTip="驅散目標區域內的所有魔法傚果。|n|cffffcc00能對召喚出來的單位造成<Adis,DataB1>的傷害。|r"
+Hotkey=D
+
+// Heal
+[Ahea]
+Name=醫療
+Tip=醫療(|cffffcc00E|r)
+Ubertip="醫療一個友軍的非機械受傷單位，恢復其<Ahea,DataA1>的生命值。"
+Untip="|cffc3dbff點擊右鍵以激活自動施放功能。|r"
+Unubertip="|cffc3dbff點擊右鍵以取消自動施放功能。|r"
+Hotkey=E
+Unhotkey=E
+YDWEtip="被醫療中的單位不能被其他單位醫療。"
+
+[Bhea]
+Bufftip=醫療
+Buffubertip="該單位正在被醫療，其喪失的生命值將得到恢復。"
+
+[BNhe]
+Bufftip=中立的醫療
+Buffubertip="該單位正在被醫療；其喪失的生命值將得到恢復。"
+
+// Slow
+[Aslo]
+Name=減速
+Tip=減速(|cffffcc00W|r)
+Ubertip="減慢目標單位<Aslo,DataB1,%>%的攻擊速度和<Aslo,DataA1,%>%的移動速度。|n持續<Aslo,Dur1>秒。"
+Untip="|cffc3dbff點擊右鍵以激活自動施放功能。|r"
+Unubertip="|cffc3dbff點擊右鍵以取消自動施放功能。|r"
+Hotkey=W
+Unhotkey=W
+
+[Bslo]
+Bufftip=減速
+Buffubertip="該單位被減速了，其移動速度和攻擊速度都會下降。"
+
+// Invisibility
+[Aivs]
+Name=隱形術
+Tip=隱形術(|cffffcc00I|r)
+Ubertip="使目標單位處於隱形，但是一旦其攻擊或者使用魔法則會顯露原形。|n持續 <Aivs,Dur1>秒。"
+Hotkey=I
+
+[Binv]
+Bufftip=隱形術
+Buffubertip="該單位處於隱形的狀態之中; 敵人不能看到其存在。如果它攻擊或者施放魔法，那麼就會暴露出自己的蹤跡。"
+
+// Polymorph
+[Aply]
+Name=變形術
+Tip=變形術(|cffffcc00O|r)
+Ubertip="使得敵人的一個單位變成一頭小綿羊，保有原有的生命值和防禦，但是會使其喪失攻擊力。|n不能被用在英雄身上。|n持續<Aply,Dur1>秒。"
+Hotkey=O
+
+[Bply]
+Bufftip=變形術
+Buffubertip="該單位被施放了變形術，因此被變成了一頭溫順的小綿羊。"
+
+// Blizzard
+[AHbz]
+Name=暴風雪
+Tip=暴風雪(|cffffcc00B|r) - [|cffffcc00等級 1|r],暴風雪(|cffffcc00B|r) - [|cffffcc00等級 2|r],暴風雪(|cffffcc00B|r) - [|cffffcc00等級 3|r]
+Ubertip="召喚出<AHbz,DataA1>次的冰片攻擊，每一次攻擊能對一小塊區域內的單位造成<AHbz,DataB1>的傷害值。","召喚出<AHbz,DataA2>次的冰片攻擊，每一次攻擊能對一小塊區域內的單位造成<AHbz,DataB2>的傷害值。","召喚出<AHbz,DataA3> 次的冰片攻擊，每一次攻擊能對一小塊區域內的單位造成<AHbz,DataB3>的傷害值。"
+Hotkey=B
+Researchtip="學習暴風雪(|cffffcc00B|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="能召喚出若干次冰片攻擊，對目標區域內的單位造成一定的傷害。|n|n|cffffcc00等級 1|r -<AHbz,DataA1>次攻擊，每次造成<AHbz,DataB1>點的傷害。|n|cffffcc00等級 2|r -<AHbz,DataA2>次攻擊，每次造成<AHbz,DataB2>點的傷害。|n|cffffcc00等級 3|r -<AHbz,DataA3>次攻擊，每次造成<AHbz,DataB3>點的傷害。"
+Researchhotkey=B
+YDWEtip="造成法術攻擊，冰凍傷害(魔法傷害)"
+
+[BHbd]
+Bufftip=暴風雪
+Buffubertip="該單位正受到暴風雪的攻擊傷害。"
+
+// Summon Water Elemental
+[AHwe]
+Name=召喚水元素
+Tip=召喚水元素(|cffffcc00W|r) - [|cffffcc00等級 1|r],召喚水元素(|cffffcc00W|r) - [|cffffcc00等級 2|r],召喚水元素(|cffffcc00W|r) - [|cffffcc00等級 3|r] 
+Ubertip="召喚出一個具有<hwat,realHP>生命值的水元素來幫大魔法師進行戰鬥。攻擊力為<hwat,mindmg1> - <hwat,maxdmg1>點。|n持續<AHwe,Dur1>秒。|n|n|cffffcc00能攻擊地面和空中單位。|r","召喚出一個具有<hwt2,realHP>生命值的水元素來幫大魔法師進行戰鬥。攻擊力為<hwt2,mindmg1>-<hwt2,maxdmg1>點。|n持續<AHwe,Dur1>秒。|n|n|cffffcc00能攻擊地面和空中單位。|r","召喚出一個具有<hwt3,realHP>生命值的水元素來幫大魔法師進行戰鬥。攻擊力為<hwt3,mindmg1>-<hwt3,maxdmg1>點。|n持續<AHwe,Dur1>秒。|n|n|cffffcc00能攻擊地面和空中單位。|r"
+ResearchUberTip="召喚出一個水元素來幫大魔法師進行戰鬥。|n持續<AHwe,Dur1>秒。|n|n|cffffcc00能攻擊地面和空中單位。|r|n|n|cffffcc00等級 1|r - <hwat,realHP>點生命值，<hwat,mindmg1>-<hwat,maxdmg1>點的傷害。|n|cffffcc00等級 2|r - <hwt2,realHP>點生命值，<hwt2,mindmg1>-<hwt2,maxdmg1>點的傷害。|n|cffffcc00等級 3|r - <hwt3,realHP>點生命值，<hwt3,mindmg1>-<hwt3,maxdmg1>點的傷害。"
+Hotkey=W
+Researchtip="學習召喚水元素(|cffffcc00W|r) - [|cffffcc00等級 %d|r]"
+Researchhotkey=W
+YDWEtip="千萬不要召喚負數個水元素，你懂的"
+
+[BHwe]
+Bufftip=水元素
+Buffubertip="召喚出來的單位容易遭到驅散。"
+
+// Brilliance Aura
+[AHab]
+Name=輝煌光環
+Tip=輝煌光環 - [|cffffcc00等級 1|r],輝煌光環 - [|cffffcc00等級 2|r],輝煌光環 - [|cffffcc00等級 3|r]
+Ubertip="能加快周圍友軍單位的魔法值恢復速度。","能加快周圍友軍單位的魔法值恢復速度。","能加快周圍友軍單位的魔法值恢復速度。"
+Researchtip="學習輝煌光環(|cffffcc00R|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="能加快周圍友軍單位的魔法值恢復速度。|n|n|cffffcc00等級 1|r -能緩慢地加快周圍友軍的魔法值恢復速度。|n|cffffcc00等級 2|r -能稍快地加快周圍友軍的魔法值恢復速度。|n|cffffcc00等級 3|r -能迅速地加快周圍友軍的魔法值恢復速度。"
+Researchhotkey=R
+
+[BHab]
+Bufftip=輝煌光環
+Buffubertip="該單位處於輝煌光環之下，因此其魔法恢復速度將加快。"
+YDWEtip="魔法傚果不同的同種光環可以疊加"
+
+// Mass Teleport
+[AHmt]
+Name=群體傳送
+Tip=群體傳送(|cffffcc00T|r)
+Ubertip="將<AHmt,DataA1>個單位（包括大魔法師在內）傳送到一個友軍單位或者建築物旁邊。"
+Hotkey=T
+Researchtip=學習群體傳送(|cffffcc00T|r)
+Researchubertip="將<AHmt,DataA1>個單位（包括大魔法師在內）傳送到一個友軍單位或者建築物旁邊。"
+Researchhotkey=T
+Globalmessage=
+Globalsound=
+YDWEtip="群體傳送即使改了目標允許也不能對敵方單位釋放。傳送的目標單位無法移動，攻擊，施法，相當於暫停。當前攻擊該目標的單位會轉移攻擊目標。如果目標在這期間死亡了，那麼群體傳送進入冷卻，但不會傳送過去。可以在發布傳送命令之後在目標地點創建一個馬甲單位，該馬甲能夠成為作為該次傳送的目標。"
+
+// Storm Bolt
+[AHtb]
+Name=風暴之錘
+Tip=風暴之錘(|cffffcc00T|r) - [|cffffcc00等級 1|r], 風暴之錘(|cffffcc00T|r) - [|cffffcc00等級 2|r], 風暴之錘(|cffffcc00T|r) - [|cffffcc00等級 3|r]
+Ubertip="向目標投擲一巨大的魔法錘，對其造成<AHtb,DataA1>點傷害並使其<AHtb,Dur1>秒內處於眩暈狀態。","向目標投擲一巨大的魔法錘，對其造成<AHtb,DataA2> 點傷害並使其<AHtb,Dur2>秒內處於眩暈狀態。","向目標投擲一巨大的魔法錘，對其造成<AHtb,DataA3>點傷害並使其<AHtb,Dur3>秒內處於眩暈狀態。"
+Hotkey=T
+Researchtip="學習風暴之錘(|cffffcc00T|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="向目標投擲一巨大的魔法錘，對其造成一定傷害並使其處於眩暈狀態。|n|n|cffffcc00等級 1|r - <AHtb,DataA1>點傷害，<AHtb,Dur1>秒眩暈狀態。|n|cffffcc00等級 2|r - <AHtb,DataA2>點傷害，<AHtb,Dur2>秒眩暈狀態。|n|cffffcc00等級 3|r - <AHtb,DataA3>點傷害，<AHtb,Dur3>秒眩暈狀態。"
+Researchhotkey=T
+YDWEtip="造成法術攻擊，音速傷害(魔法傷害)"
+
+[BHtb]
+Bufftip=風暴之錘
+Buffubertip="該單位遭到了風暴之錘的攻擊，因此不能移動，攻擊或者施放魔法。"
+
+// Thunder Clap
+[AHtc]
+Name=雷霆一擊
+Tip=雷霆一擊(|cffffcc00C|r) - [|cffffcc00等級 1|r],雷霆一擊(|cffffcc00C|r) - [|cffffcc00等級 2|r],雷霆一擊(|cffffcc00C|r) - [|cffffcc00等級 3|r]
+Ubertip="重擊地面，對周圍的地面單位造成<AHtc,DataA1>點傷害並使其減慢 <AHtc,DataC1,%>%的移動速度和<AHtc,DataD1,%>%的攻擊速度。","重擊地面，對周圍的地面單位造成<AHtc,DataA2>點傷害並使其減慢<AHtc,DataC2,%>%的移動速度和<AHtc,DataD2,%>%的攻擊速度。","重擊地面，對周圍的地面單位造成<AHtc,DataA3>點傷害並使其減慢<AHtc,DataC3,%>%的移動速度和<AHtc,DataD3,%>%的攻擊速度。"
+Hotkey=C
+Researchtip="學習雷霆一擊(|cffffcc00C|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="重擊地面，對周圍的地面單位造成傷害並減慢其移動速度和攻擊速度。|n|n|cffffcc00等級 1|r - <AHtc,DataA1>點傷害，<AHtc,DataC1,%>%的移動速度，<AHtc,DataD1,%>%的攻擊速度。|n|cffffcc00等級 2|r - <AHtc,DataA2>點傷害，<AHtc,DataC2,%>%的移動速度，<AHtc,DataD2,%>%的攻擊速度。|n|cffffcc00等級 3|r - <AHtc,DataA3>點傷害，<AHtc,DataC3,%>%的移動速度，<AHtc,DataD3,%>%的攻擊速度。"
+Researchhotkey=C
+YDWEtip="造成法術攻擊，音速傷害(魔法傷害)"
+
+[BHtc]
+Bufftip=雷霆一擊
+Buffubertip="該單位受到了雷霆一擊的攻擊，其移動速度和攻擊速度都會減慢。"
+
+// Bash
+[AHbh]
+Name=重擊
+Tip=重擊 - [|cffffcc00等級 1|r],重擊 - [|cffffcc00等級 2|r],重擊 - [|cffffcc00等級 3|r]
+Ubertip="給予<AHbh,DataA1>%的概率使得山丘之王的常規攻擊能附帶<AHbh,DataC1>點的額外傷害值，並在<AHbh,Dur1>秒內使得對手處於眩暈狀態。","給予<AHbh,DataA2>%的概率使得山丘之王的常規攻擊能附帶<AHbh,DataC1>點的額外傷害值，並在<AHbh,Dur1>秒內使得對手處於眩暈狀態。","給予<AHbh,DataA3>%的概率使得山丘之王的常規攻擊能附帶<AHbh,DataC1>點的額外傷害值，並在<AHbh,Dur1>秒內使得對手處於眩暈狀態。"
+Researchtip="學習重擊(|cffffcc00B|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="給予一定的概率使得山丘之王的常規攻擊能附帶<AHbh,DataC1>點的附加傷害值並在<AHbh,Dur1>秒內使得對手處於眩暈狀態。|n|n|cffffcc00等級 1|r - 每次攻擊<AHbh,DataA1>%的概率。|n|cffffcc00等級 2|r - 每次攻擊<AHbh,DataA2>%的概率。|n|cffffcc00等級 3|r - 每次攻擊<AHbh,DataA3>%的概率。"
+Researchhotkey=B
+YDWEtip="不觸發時不占用法球和攻擊特效。傷害倍擊部分是1級類法球。武器類型為普通或立即時，重擊部分是1級類攻擊特效，眩暈無視魔免但是是法術攻擊力量傷害(魔法傷害)。武器類型為箭矢時，重擊部分是1級攻擊特效。武器類型為箭矢(濺射)時可以範圍擊暈，非終極技能的重擊眩暈不能對魔免生效但是傷害附加算在原攻擊中。武器類型為箭矢(彈射)或(直線)時，重擊會致彈射失效。武器類型為炮火或炮火(直線)時，武器類型導致重擊的攻擊特效失效。多個致命一擊觸發概率互相獨立，同時觸發時紅字不是真正傷害值，而是取後獲得的倍率。"
+
+[BHbh]
+Bufftip=重擊
+Buffubertip="這個單位遭到了重擊，因此不能移動，攻擊和施放魔法。"
+
+// Avatar
+[AHav]
+Name=天神下凡
+Tip=激活天神下凡(|cffffcc00V|r)
+UberTip="激活該技能能提高山丘之王<AHav,DataA1>點的護甲，<AHav,DataB1>點的生命值，<AHav,DataC1>點的攻擊力並使其對魔法免疫。|n持續<AHav,Dur1>秒。"
+Untip=取消天神下凡(|cffffcc00V|r)
+UnUberTip=""
+Hotkey=V
+Unhotkey=V
+Researchtip=學習天神下凡(|cffffcc00V|r)
+ResearchUberTip="激活了該技能以後能提高山丘之王<AHav,DataA1>點的護甲, <AHav,DataB1>點的生命值,<AHav,DataC1> 點的攻擊力並使其對魔法免疫。|n持續<AHav,Dur1>秒。"
+Researchhotkey=V
+
+[BHav]
+Bufftip=天神下凡
+Buffubertip="該單位處於天神下凡的狀態之中，因此其生命值、攻擊力、護甲都得到了加強。而且還會魔法免疫。"
+
+// Holy Light
+[AHhb]
+Name=神聖之光
+Tip=神聖之光(|cffffcc00T|r)  - [|cffffcc00等級 1|r], 神聖之光(|cffffcc00T|r) - [|cffffcc00等級 2|r], 神聖之光(|cffffcc00T|r) - [|cffffcc00等級 3|r]
+UberTip="神聖之光能治愈友軍單位<AHhb,DataA1>點的生命值或者對敵軍的不死單位造成一半的傷害。","神聖之光能治愈友軍單位<AHhb,DataA2>點的生命值或者對敵軍的不死單位造成一半的傷害。","神聖之光能治愈友軍單位<AHhb,DataA3>點的生命值或者對敵軍的不死單位造成一半的傷害。"
+Hotkey=T
+Researchtip="學習神聖之光(|cffffcc00T|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="神聖之光能治愈友軍單位或者對敵軍的不死單位造成一定的傷害。|n|n|cffffcc00等級 1|r - 恢復友軍單位<AHhb,DataA1>點的生命值。|n|cffffcc00等級 2|r - 恢復友軍單位<AHhb,DataA2>點的生命值。|n|cffffcc00等級 3|r - 恢復友軍單位<AHhb,DataA3>點的生命值。"
+Researchhotkey=T
+YDWEtip="不能對單位類別為不死族的友軍單位和非不死族的敵人單位施放，造成法術攻擊，神聖傷害(魔法傷害)"
+
+// Divine Shield
+[AHds]
+Name=神聖護甲
+Tip=激活神聖護甲(|cffffcc00D|r) - [|cffffcc00等級 1|r],激活神聖護甲(|cffffcc00D|r)  - [|cffffcc00等級 2|r],激活神聖護甲(|cffffcc00D|r)  - [|cffffcc00等級 3|r]
+Ubertip="在<AHds,Dur1>秒內使得聖騎士對所有的攻擊免疫。","在<AHds,Dur2>秒內使得聖騎士對所有的攻擊免疫。","在<AHds,Dur3>秒內使得聖騎士對所有的攻擊免疫。"
+Untip=取消神聖護甲(|cffffcc00D|r)
+Hotkey=D
+Unhotkey=D
+Researchtip="學習神聖護甲(|cffffcc00D|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="在一定的時間內使得聖騎士對所有的攻擊免疫。|n|n|cffffcc00等級 1|r - 持續<AHds,Dur1>秒。|n|cffffcc00等級 2|r - 持續<AHds,Dur2>秒。|n|cffffcc00等級 3|r - 持續<AHds,Dur3>秒。"
+Researchhotkey=D
+Globalmessage=
+Globalsound=
+YDWEtip="不會打斷單位的當前任何動作包括持續施法，可在眩暈，昏迷中捕捉到技能命令的發布"
+
+[BHds]
+Bufftip=神聖護甲
+Buffubertip="該單位處於神聖護甲的保護之下，因此是無敵的。"
+
+// Devotion Aura
+[AHad]
+Name=專注光環
+Tip=專注光環 - [|cffffcc00等級 1|r],專注光環 - [|cffffcc00等級 2|r],專注光環 - [|cffffcc00等級 3|r]
+Ubertip="為周圍友軍提供<AHad,DataA1>點的額外護甲。","為周圍友軍提供<AHad,DataA2>點的額外護甲。","為周圍友軍提供<AHad,DataA3>點的額外護甲。"
+Researchtip="學習專注光環(|cffffcc00V|r) - [|cffffcc00等級 %d|r]"
+Researchubertip="為周圍友軍提供一定額外的護甲。|n|n|cffffcc00等級 1|r - 增加<AHad,DataA1>點的護甲。|n|cffffcc00等級 2|r - 增加<AHad,DataA2>點的護甲。|n|cffffcc00等級 3|r - 增加<AHad,DataA3>點的護甲。"
+Researchhotkey=V
+YDWEtip="魔法傚果不同的同種光環可以疊加"
+
+[BHad]
+Bufftip=專注光環
+Buffubertip="該單位處於專注光環的作用之下，因此提高了護甲。"
+
+// Resurrection
+[AHre]
+Name=復活
+Tip=復活(|cffffcc00R|r)
+Ubertip="復活周圍<AHre,DataA1>個友軍單位。"
+Hotkey=R
+Researchtip=學習復活(|cffffcc00R|r)
+Researchubertip="復活周圍<AHre,DataA1>個友軍單位。"
+Researchhotkey=R
+YDWEtip="會刷新並打斷被復活單位的當前動作。"
+
+// Militia
+[Amil]
+Name=戰鬥號召
+Tip=戰鬥號召(|cffffcc00C|r)
+Untip=回到工作(|cffffcc00W|r)
+Ubertip="讓農民跑到最近的一個城鎮大廳從而轉變成民兵。|n持續<Amil,Dur1>秒。"
+Unubertip="讓民兵跑到最近的一個城鎮大廳從而讓其重新變回農民。"
+Hotkey=C
+Unhotkey=W
+EditorSuffix= (農民)
+YDWEtip="在變成民兵後失去戰鬥召喚技能，會在持續時間到期後遊戲崩潰"
+
+[Bmil]
+Bufftip=民兵
+Buffubertip="該農民變成了民兵，所有其移動速度，攻擊速度，攻擊力，護甲都得到了加強。"
+
+// Militia Conversion
+[Amic]
+Name=戰鬥號召
+Tip=戰鬥號召(|cffffcc00C|r)
+Untip=回到工作(|cffffcc00W|r)
+Ubertip="讓附近的農民過來從而讓其變成民兵。|n持續<Amil,Dur1>秒。"
+Unubertip="讓附近的民兵過來從而讓其重新變成農民。"
+Hotkey=C
+Unhotkey=W
+EditorSuffix= (城鎮大廳)
+YDWEtip="在變成民兵後失去戰鬥召喚技能，會在持續時間到期後遊戲崩潰"
+
+//----------------------------------------------------
+// Buffs with no in-game text
+// EditorName is for the Object Editor list only
+
+[BHbz]
+EditorName=暴風雪 (施法者)
+
+[Bdcb]
+EditorName=汲取生命值和魔法值(施法者)
+
+[Bdcl]
+EditorName=汲取生命值(施法者)
+
+[Bdcm]
+EditorName=汲取魔法值 (施法者)
+
+[Bdtb]
+EditorName=汲取生命值和魔法值(目標)
+
+[Bdtl]
+EditorName=汲取生命值(目標)
+
+[Bdtm]
+EditorName=汲取魔法值 (目標)
+
+[Bmlc]
+EditorName=空中鎖鐐(施法者)
+
+[Bivs]
+EditorName=隱形 (額外的)
+
+[XHbz]
+EditorName=暴風雪 (效果)
+
+[XHfs]
+EditorName=烈焰風暴(效果)
+
+[Xclf]
+EditorName=烏雲 (效果)
+
+[Xfla]
+EditorName=照明彈(效果)
+
+[Xfhs]
+EditorName=建築物傷害 – 人族  小
+
+[Xfhm]
+EditorName=建築物傷害 – 人族  中
+
+[Xfhl]
+EditorName=建築物傷害 – 人族  大

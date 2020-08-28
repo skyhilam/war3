@@ -1,0 +1,11 @@
+﻿// Non-race-specific upgrades
+// glyph of fortification
+[Rgfo]
+Name=防禦浮雕,防禦浮雕,防禦浮雕
+EditorSuffix= (升級 1),(升級 2),(升級 3)
+
+// glyph of ultravision
+[Rguv]
+Name=夜視浮雕
+EditorSuffix= (升級)
+

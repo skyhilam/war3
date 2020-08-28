@@ -1,0 +1,5 @@
+﻿[Categories]
+GiantClass=巨型
+UndeadClass=不死族
+MechanicalClass=機械類
+TaurenClass=牛頭人族

@@ -1,0 +1,4 @@
+Parse successful:     2418 lines: E:\YDWE1.28.7繁體正式版 - 附DOTA UI - 修正一版\plugin\jasshelper\common.j
+Parse successful:    10230 lines: E:\YDWE1.28.7繁體正式版 - 附DOTA UI - 修正一版\plugin\jasshelper\blizzard.j
+Parse successful:    38256 lines: logs\currentmapscript.j
+Parse successful:    50904 lines: <total>
