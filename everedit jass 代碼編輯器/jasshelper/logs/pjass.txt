@@ -1,4 +1,0 @@
-Parse successful:     2418 lines: F:\Users\會用到\everedit_win32_4140_portable\jasshelper\common.j
-Parse successful:    10230 lines: F:\Users\會用到\everedit_win32_4140_portable\jasshelper\blizzard.j
-Parse successful:    32140 lines: logs\currentmapscript.j
-Parse successful:    44788 lines: <total>

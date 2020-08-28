@@ -1,4 +1,0 @@
-logs\currentmapscript.j
-JASSHelper - Step 1 (textmacros, libraries, scopes)
-Line 6483: String literal size limit exceeded /unclosed string
-1

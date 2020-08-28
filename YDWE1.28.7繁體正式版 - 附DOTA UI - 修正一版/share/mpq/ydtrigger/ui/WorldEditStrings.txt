@@ -1,9 +1,0 @@
-﻿[WorldEditStrings]
-WESTRING_ERROR_YDTRIGGER_ILLEGAL_WAIT=YDTrigger Error: 不要在逆天計時器/逆天觸發器內使用等待
-WESTRING_ERROR_YDTRIGGER_ILLEGAL_PARAMETER=YDTrigger Error: 不要在逆天計時器/逆天觸發器的參數裡嵌套逆天計時器/逆天觸發器
-WESTRING_ERROR_YDTRIGGER_ANYPLAYER=YDTrigger Error: 不要在動作中使用“任意玩家”
-WESTRING_ERROR_YDTRIGGER_LOCVAR=YDTrigger Error: 你使用了局部變量“%s”(類型:%s)，但你在其他地方使用的是局部變量“%s”(類型:%s)。
-WESTRING_ERROR_YDTRIGGER_TIMER_FLUSH=YDTrigger Error: 不要在逆天計時器的動作外使用<清除逆天計時器>
-WESTRING_ERROR_YDTRIGGER_TRIGGER_FLUSH=YDTrigger Error: 不要在逆天觸發器的動作外使用<清除逆天觸發器>
-WESTRING_ERROR_YDTRIGGER_YDWEEnumUnitsInRangeMultiple=YDTrigger Error: 不要嵌套使用<逆天--選取單位>
-WESTRING_ERROR_YDTRIGGER_ForForceMultiple=YDTrigger Error: 不要嵌套使用<選取玩家組>
