@@ -316,6 +316,7 @@ integer O1O11I=0
 unit O11III=null
 unit O11IOI=null
 unit my_trigger=null
+integer trigger_times=0
 unit array udg_A12R_U
 integer array udg_A12R_I
 force O11I1I=null
@@ -10842,22 +10843,21 @@ function OOOOOI1I takes nothing returns boolean
 endfunction
 
 function OOOOOOII takes nothing returns nothing
-	
-	call BJDebugMsg("觸發了-ACav技能")
 	call UnitAddAbility(GetTriggerUnit(), 'AIat')
 	call UnitMakeAbilityPermanent(GetTriggerUnit(),true,'AIat')
 
-	// if GetUnitAbilityLevel(GetTriggerUnit(),'A144')>0 then
+	if GetUnitAbilityLevel(GetTriggerUnit(),'A144')>0 then
 		// call BJDebugMsg("觸發了-tie144")
 		set tie144=GetTriggerUnit()
-	// endif
+	endif
 
-	// if GetUnitAbilityLevel(GetTriggerUnit(),'ACav')>0 then
+	if GetUnitAbilityLevel(GetTriggerUnit(),'ACav')>0 then
 		// call BJDebugMsg("觸發了-O11IOI")
 		set O11IOI=GetTriggerUnit()
-	// endif
+	endif
 
-
+	//call DisplayTimedTextToForce(OOOIIIO(GetTriggerPlayer()),5.,("觸發了-ACav技能"))
+	
 endfunction
 
 
@@ -10867,24 +10867,36 @@ function OOOOOO1I takes nothing returns boolean
 endfunction
 
 function AcavFunction takes nothing returns nothing
-	local unit u1= GetTriggerUnit()
+	local unit u1= O11IOI
 	local unit u2= GetEventTargetUnit()
 	local integer i=GetPlayerId(GetOwningPlayer(u1)) + 1
 
 	if ( ( u2 != udg_A12R_U[i] ) and ( udg_A12R_U[i] != null ) ) then
 		set udg_A12R_I[i]=1
 	else
+		// udg_A12R_I[i] = 疊槍次數
 		if udg_A12R_I[i] < 1 + 5 * GetUnitAbilityLevel(u1, 'ACav') then
-		   	set udg_A12R_I[i]=udg_A12R_I[i] + 1
+			set udg_A12R_I[i] = udg_A12R_I[i] + 1
 		endif
 	endif
 
+	// get_trigger_unit = 上次攻擊目標, GetTriggerUnit() = 現在攻擊目標
+	if GetTriggerUnit() != get_trigger_unit then
+		set udg_A12R_I[i] = R2I(udg_A12R_I[i]/2)
+	endif
+				
+	set get_trigger_unit = GetTriggerUnit()
+
 	call DestroyEffect(AddSpecialEffectTarget("Abilities\\Weapons\\GryphonRiderMissile\\GryphonRiderMissile.mdl", u1, "weapon"))
 	set udg_A12R_U[i]=u2
-	call SetUnitAbilityLevel(u1, 'AIat', udg_A12R_I[i]*10)
+	
+	call SetUnitAbilityLevel(u1, 'AIat', udg_A12R_I[i])
+
+	// call BJDebugMsg("疊槍次數: "+I2S(udg_A12R_I[i]))
 
 	set u1=null
 	set u2=null
+
 endfunction
 
 function OOOOO1II takes nothing returns nothing
