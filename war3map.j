@@ -12291,21 +12291,38 @@ set OIII=OIII+1
 endloop
 call StartTimerBJ(O1OI[2],true,.03)
 endfunction
+//===========================================================================
+// Trigger: FE 豪雷 ANhs
+//===========================================================================
 function O1I1OI1I takes nothing returns boolean
-return GetSpellAbilityId()=='A0J0'
+	return GetSpellAbilityId()=='A0J0'
 endfunction
+
 function O1I1OOII takes nothing returns nothing
-local real x=GetSpellTargetX()
-local real y=GetSpellTargetY()
-local unit e=CreateUnit(GetTriggerPlayer(),'e01Z',GetUnitX(GetTriggerUnit()),GetUnitY(GetTriggerUnit()),0)
-call UnitApplyTimedLife(e,'BTLF',$A)
-call SetUnitUserData(e,$C)
-call UnitAddAbility(e,'ANhs')
-call SetUnitFlyHeight(e,1000.,.0)
-call SetUnitAbilityLevel(e,'ANhs',GetUnitAbilityLevel(GetTriggerUnit(),'A0J0'))
-call IssuePointOrderById(e,$D02B8,x,y)
-set e=null
+	local real x=GetSpellTargetX()
+	local real y=GetSpellTargetY()
+	local unit e=CreateUnit(GetTriggerPlayer(),'e01Z',GetUnitX(GetTriggerUnit()),GetUnitY(GetTriggerUnit()),0)
+	local unit e2=CreateUnit(GetTriggerPlayer(),'e01Z',GetUnitX(GetTriggerUnit()),GetUnitY(GetTriggerUnit()),0)
+
+	call UnitApplyTimedLife(e,'BTLF',$A)
+	call SetUnitUserData(e,$C)
+	call UnitAddAbility(e,'A0FE')
+	call SetUnitFlyHeight(e,1000.,.0)
+	call SetUnitAbilityLevel(e,'A0FE',GetUnitAbilityLevel(GetTriggerUnit(),'A0J0'))
+	call IssuePointOrderById(e,$D02B8,x,y)
+
+	call UnitApplyTimedLife(e2,'BTLF',$A)
+	call SetUnitUserData(e2,$C)
+	call UnitAddAbility(e2,'ANhs')
+	call SetUnitFlyHeight(e2,1000.,.0)
+	call SetUnitAbilityLevel(e2,'ANhs',GetUnitAbilityLevel(GetTriggerUnit(),'A0J0'))
+	call IssuePointOrderById(e2,$D02B8,x,y)
+	
+	set e=null
+	set e2=null
 endfunction
+//===========================================================================
+
 function O1I1OO1I takes nothing returns boolean
 return(IsUnitIllusion(GetTriggerUnit())==false)and(GetLearnedSkill()=='A0D2')
 endfunction
@@ -12497,22 +12514,39 @@ call SetUnitAbilityLevel(GetLearningUnit(),'A09M',bouncelevel)
 call SetPlayerTechResearchedSwap('Remg',GetUnitAbilityLevelSwapped('A09M',GetLearningUnit()),GetOwningPlayer(GetTriggerUnit()))
 endif
 endfunction
+
+//===========================================================================
+// Trigger: fs 寧寧大技 AIpv 忍法密傳‧影月攻勢
+//===========================================================================
 function O1OI11OI takes nothing returns boolean
-return(GetSpellAbilityId()=='A09L')
+	// return(GetSpellAbilityId()=='A01I' or GetSpellAbilityId()=='A09L' or GetSpellAbilityId()=='AIpv')
+	return(GetSpellAbilityId()=='AIpv')
 endfunction
+
 function O1OI111I takes nothing returns boolean
-return(GetUnitUserData(GetTriggerUnit())==0)
+	return(GetUnitUserData(GetTriggerUnit())==0)
 endfunction
+
 function O1OOIIII takes nothing returns nothing
-call UnitAddAbility(GetTriggerUnit(),'Apxf')
-call SetUnitAbilityLevelSwapped('Apxf',GetTriggerUnit(),GetUnitAbilityLevelSwapped(GetSpellAbilityId(),GetTriggerUnit()))
-call SetUnitUserData(GetTriggerUnit(),(GetUnitUserData(GetTriggerUnit())+1))
-call TriggerSleepAction(20.)
-call SetUnitUserData(GetTriggerUnit(),(GetUnitUserData(GetTriggerUnit())-1))
-if(O1OI111I())then
-call UnitRemoveAbility(GetTriggerUnit(),'Apxf')
-endif
+	// call BJDebugMsg("觸發了-寧寧大技 Apxf")
+	//if ( ( GetUnitAbilityLevelSwapped('A01I', GetTriggerUnit()) == 1 ) or GetUnitAbilityLevelSwapped('A09L', GetTriggerUnit()) == 1 ) ) then
+        //call UnitAddAbilityBJ('Asph', GetTriggerUnit())
+        //call TriggerSleepAction(60.00)
+        //call UnitRemoveAbilityBJ('Asph', GetTriggerUnit())
+   // else
+        //call DoNothing()
+    //endif
+
+	call UnitAddAbility(GetTriggerUnit(),'Apxf')
+	call SetUnitAbilityLevelSwapped('Apxf',GetTriggerUnit(),GetUnitAbilityLevelSwapped(GetSpellAbilityId(),GetTriggerUnit()))
+	call SetUnitUserData(GetTriggerUnit(),(GetUnitUserData(GetTriggerUnit())+1))
+	call TriggerSleepAction(60.)
+	call SetUnitUserData(GetTriggerUnit(),(GetUnitUserData(GetTriggerUnit())-1))
+	if(O1OI111I())then
+		call UnitRemoveAbility(GetTriggerUnit(),'Apxf')
+	endif
 endfunction
+//===========================================================================
 function O1OOII1I takes nothing returns boolean
 return(GetSpellAbilityId()=='A08X')
 endfunction
@@ -21284,10 +21318,14 @@ set OOI111I=CreateTrigger()
 call TriggerRegisterAnyUnitEventBJ(OOI111I,EVENT_PLAYER_HERO_SKILL)
 call TriggerAddCondition(OOI111I,Condition(function O1OI1OOI))
 call TriggerAddAction(OOI111I,function O1OI1O1I)
+//===========================================================================
+// InitTrig_fs
+//===========================================================================
 set OOOIIII=CreateTrigger()
 call TriggerRegisterAnyUnitEventBJ(OOOIIII,EVENT_PLAYER_UNIT_SPELL_EFFECT)
 call TriggerAddCondition(OOOIIII,Condition(function O1OI11OI))
 call TriggerAddAction(OOOIIII,function O1OOIIII)
+//===========================================================================
 set OOOIIOI=CreateTrigger()
 call TriggerRegisterAnyUnitEventBJ(OOOIIOI,EVENT_PLAYER_UNIT_SPELL_EFFECT)
 call TriggerAddCondition(OOOIIOI,Condition(function O1OOII1I))
